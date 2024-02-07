@@ -6,7 +6,8 @@ FoguelMusicStore é um aplicativo que simula um aplicativo de compra de albums m
 ![Captura de tela 2024-02-07 124546](https://github.com/gustavofoguel/FoguelMusicStore/assets/65081019/0dc577f9-dce2-4a0e-9844-928e7cf303dd)
 
 # Biblioteca de Albums salvos
-![sdsds](https://github.com/gustavofoguel/FoguelMusicStore/assets/65081019/b31a3c39-771d-4f43-b9ce-1d25e3598290)
+![21](https://github.com/gustavofoguel/FoguelMusicStore/assets/65081019/3c29aa1f-b24a-430a-904b-7d5cac0cc741)
+
 
 
 
