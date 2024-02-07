@@ -21,25 +21,32 @@
     </Design.DataContext>
 
 
-  <StackPanel>
-    <Button HorizontalAlignment="Right" VerticalAlignment="Top"
-          Command="{Binding BuyMusicCommand}">
-      <PathIcon Data="{StaticResource store_microsoft_regular}"/>
-    </Button>
+  <Grid RowDefinitions="141*,517*,142*" ColumnDefinitions="214*,852*,214*">
+    
+    <TextBlock Foreground="White" FontWeight="DemiBold" FontSize="38" Grid.Row="0" Grid.Column="1" Text="FOGUEL MUSIC STORE" TextAlignment="Center" Margin="50" />
+    <StackPanel Grid.Row="1" Grid.Column="1">
+      <Button  Width="100" Height="100" HorizontalAlignment="Right" VerticalAlignment="Top"
+            Command="{Binding BuyMusicCommand}">
+        <PathIcon Width="100" Height="100" Data="{StaticResource store_microsoft_regular}"/>
+        
+      </Button>
 
-    <ItemsControl Margin="0 40 0 0" ItemsSource="{Binding Albums}">
-      <ItemsControl.ItemsPanel>
-        <ItemsPanelTemplate>
-          <WrapPanel />
-        </ItemsPanelTemplate>
-      </ItemsControl.ItemsPanel>
+      <ItemsControl Margin="0 40 0 0" ItemsSource="{Binding Albums}">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate>
+            <WrapPanel />
+          </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
 
-      <ItemsControl.ItemTemplate>
-        <DataTemplate>
-          <views:AlbumView Margin="0 0 20 20" />
-        </DataTemplate>
-      </ItemsControl.ItemTemplate>
-    </ItemsControl>
-  </StackPanel>
+        <ItemsControl.ItemTemplate>
+          <DataTemplate>
+            <views:AlbumView Margin="0 0 20 20" />
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </StackPanel>
+  </Grid>
+
+  
 
 </Window>
